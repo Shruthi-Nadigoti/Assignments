@@ -1,4 +1,4 @@
-package epam.week2;
+package com.epam.week2;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

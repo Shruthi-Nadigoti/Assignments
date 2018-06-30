@@ -1,12 +1,13 @@
 /*
- * @(#)Student.java         28/06/18
- * This file contains Student Class
+ * @(#)Student.java         29/06/18
+ * This file contains student class
  */
 
-package epam.week2;
+package com.epam.week2;
 
 /**
  * Student class contains student properties which are private.
+ * all setter and getter methods are defined.
  * We can access the student properties using setter and getter methods only.
  */
 public class Student {

@@ -1,10 +1,14 @@
 /*
- * @(#)Main.java         28/06/18
- * this application contains student info.
- * set of operations like sorting and searching can be performed on this list.
+ * @(#)Main.java         29/06/18
+ * this application contains students info.
+ * students info is loaded by csv file
+ * set of operations like sorting and searching can be performed on this student list.
  */
-package epam.week2;
+package com.epam.week2;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Properties;
 import java.util.Scanner;
 
 /**
@@ -21,18 +25,22 @@ public class Main {
     public static void main(final String[] args) {
     	final Scanner scannerObject = new Scanner(System.in);
     	final StudentOperations studentOperationsObject = new StudentOperations();
-    	String csvFilePath = "C:/Users/SURATHI/eclipse-workspace/week2/src/main/java/epam/week2/csv/student.csv";
+    	Properties prop = new Properties();
+    	InputStream input = null;
     	try {
+    		input = new FileInputStream("resources/config.properties");
+    	    prop.load(input); 	// load a properties file
+    	    String csvFilePath = prop.getProperty("csvFilePath");
 	    	ArrayList<Student> students = studentOperationsObject.loadCSVFileToStudentArray(csvFilePath);
 	    	studentOperationsObject.setStudents(students);
 
 	    	int choice = 0;
 	    	do {
 	    		System.out.println("Enter \n\t"
-	    				+ "1 - To sort the student array\n\t"
-	    				+ "2 - To search the student array\n\t"
-	    				+ "3 - To print the student array\n\t"
-	    				+ "4 - To Exit");
+	    					+ "1 - To sort the student array\n\t"
+	    					+ "2 - To search the student array\n\t"
+	    					+ "3 - To print the student array\n\t"
+	    					+ "4 - To Exit");
 	    		choice = scannerObject.nextInt();
 	    		switch (choice) {
 	    			case 1:

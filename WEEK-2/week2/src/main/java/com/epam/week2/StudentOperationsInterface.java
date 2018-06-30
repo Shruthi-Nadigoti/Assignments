@@ -1,7 +1,7 @@
 /*
- *  @(#)StudentOperationsInterface.java         28/06/18
+ *  @(#)StudentOperationsInterface.java         29/06/18
  */
-package epam.week2;
+package com.epam.week2;
 
 import java.util.ArrayList;
 

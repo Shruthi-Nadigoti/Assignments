@@ -1,24 +1,24 @@
 /*
  * @(#)StudentOperations.java         28/06/18
- * This file contains class studentArrayOperations.
+ * This file contains class called studentArrayOperations.
  */
-package epam.week2;
+package com.epam.week2;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import epam.week2.sort.SortByDepartmentName;
-import epam.week2.sort.SortByFirstName;
-import epam.week2.sort.SortById;
-import epam.week2.sort.SortByLastName;
-import epam.week2.sort.SortByYear;
+import com.epam.week2.sort.SortByDepartmentName;
+import com.epam.week2.sort.SortByFirstName;
+import com.epam.week2.sort.SortById;
+import com.epam.week2.sort.SortByLastName;
+import com.epam.week2.sort.SortByYear;
 
 /**
  * Contains set of operations that can be performed on student list.
  * @version 1.0.0
- * @author SURATHI
+ * @author SHRUTHI
  *
  */
 public class StudentOperations implements StudentOperationsInterface {

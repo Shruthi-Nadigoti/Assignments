@@ -1,11 +1,11 @@
 /*
- *  @(#)SortByDepartmentName.java         28/06/18
+ *  @(#)SortByDepartmentName.java         29/06/18
  */
-package epam.week2.sort;
+package com.epam.week2.sort;
 
 import java.util.Comparator;
 
-import epam.week2.Student;
+import com.epam.week2.Student;
 
 /**
  * Used for sorting student array in ascending array by department name
@@ -15,7 +15,7 @@ import epam.week2.Student;
 public class SortByDepartmentName implements Comparator<Student> {
 
     /**
-     * Used for sorting student array in ascending array by department name.
+     * compares the one student object with another student object using department name.
      * @param student1 student object
      * @param student2 student object
      * @return integer 0,1 or -1
