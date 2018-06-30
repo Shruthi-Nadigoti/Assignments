@@ -20,12 +20,12 @@ public interface StudentOperationsInterface {
 	 */
 
 	public ArrayList<Student> sortStudentArray(int column);
+
 	/**
 	 * Gives the which matches with the search string.
 	 * @param searchString any string given by user
 	 * @return resulted student list
 	 */
-
 	public ArrayList<Student> searchStudent(String searchString);
 
 	/**
